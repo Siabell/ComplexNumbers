@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="app.js"></script>
+    <title>Complex Calculator</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <br><br>
+            <h3>Calculadora de numeros Complejos</h3>
+            <br>
+            <h5>Primer Numero</h5>
+            Parte Real <input id="num1a" type="text" name="num1a"><br>
+            Parte Imaginaria <input id="num1b" type="text" name="num1b"><br><br>
+
+            <h5>Segundo Numero</h5>
+            Parte Real <input id="num2a" type="text" name="num2a"><br>
+            Parte Imaginaria <input id="num2b" type="text" name="num2b"><br><br>
+            <input id="sumar" type="button" onclick="app.suma()" value="Sumar">
+            <input id="restar" type="button" onclick="app.resta()" value="Restar">
+            <input id="mult" type="button" onclick="app.mult()" value="Multiplicar">
+            <input id="div" type="button" onclick="app.division()" value="Dividir">
+            
+            <br><br><output id="result">Result: </output>
+        </div>
+    </form>
+</body>
+</html>
